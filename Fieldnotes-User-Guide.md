@@ -30,6 +30,10 @@ Insights shows totals, habitats, confirmed life lists, named outings, and the US
 
 New sighting opens the editor. Backup & restore is available from the main app bar.
 
+Tap the eagle in the app bar or About dialog to view the larger 2048-pixel artwork offline. Pinch to zoom, drag to pan, and use Reset eagle zoom to fit it again. Back returns to the previous screen.
+
+For a few quiet surprises, long-press the eagle icon for a wildlife fact, tap the Insights heading for a discovery message, or double-tap the enlarged eagle to watch it gently soar. The brief animation respects the device's reduced-motion setting. These extras work offline and never change your journal.
+
 ## 4. Add your first sighting
 
 1. Tap New sighting.
