@@ -4,6 +4,8 @@ An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and 
 
 The latest preview includes the refined eagle beak and head. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
 
+Tap the eagle icon to open its larger artwork; pinch to zoom and use Reset eagle zoom to fit again. Long-press the icon for a wildlife fact, tap the Insights heading for a discovery message, or double-tap the enlarged eagle for a gentle soaring animation. These extras work offline, respect reduced-motion settings, and never change journal data.
+
 ## Downloads and installation
 
 Download the latest APK from [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases). Public downloads require no GitHub sign-in. This repository distributes APKs and documentation only; application source remains private.
