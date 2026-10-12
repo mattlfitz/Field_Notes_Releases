@@ -2,7 +2,7 @@
 
 An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and other animals.
 
-The latest preview includes the refined eagle beak and head. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
+The latest preview reads photo GPS data automatically and presents Insights as visual cards and charts. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
 
 Tap the eagle icon to open its larger artwork; pinch to zoom and use Reset eagle zoom to fit again. Long-press the icon for a wildlife fact, tap the Insights heading for a discovery message, or double-tap the enlarged eagle for a gentle soaring animation. These extras work offline, respect reduced-motion settings, and never change journal data.
 
@@ -19,7 +19,7 @@ Builds are debug-signed previews, not Play Store releases. Signing keys may diff
 1. Tap **New sighting** and import photos from **Photo library**, or use **Camera**.
 2. Tap **Search animal names** to search 2,570 bundled names by common or scientific name. Filter by animal group if helpful. Selecting a result fills the name, scientific name, and group, but does not confirm identification.
 3. Custom names remain supported. Choose the appropriate **Animal group** and **Identification**. Use `Unknown bird` or `Unknown animal` when needed.
-4. Set the observation date and location. GPS records your phone's current location, not an older photo's location. You can enter coordinates manually or reuse **Saved places**.
+4. Set the observation date and location. When an imported photo contains GPS data from the camera, its coordinates fill the location fields automatically if they are empty; check them before saving. **Use current GPS location** records your phone's current location, not an older photo's location. You can also enter coordinates manually or reuse **Saved places**.
 5. For sightings without coordinates, optionally choose **US state (without GPS)**.
 6. Expand **More details** for scientific name, habitat, outing, animal count, observation time, and notes. Tap **Save sighting**.
 
@@ -29,7 +29,7 @@ The offline checklist is based on iNaturalist research-grade US/Canada observati
 
 Search and filter your collection, favorite sightings, and browse locations. Tap a sighting for details; tap its photo for fullscreen pinch zoom. Double-tap switches between fit and actual size.
 
-**Insights** includes separate confirmed **Bird life list** and **Overall life list** views. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
+**Insights** presents your journal as visual cards: collection, photo, and life-list totals with icons, an animal-group bar, and colored habitat bars. Expand the confirmed **Bird life list**, **Overall life list**, and **Outings** cards to drill into sightings. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
 
 Open **Insights > US state map** for an offline, zoomable map of the 48 contiguous states. **Birds** is selected by default; switch to **All animals** for the overall list. State boundaries and labels show distinct confirmed-name totals. Color bands are **0, 1-5, 6-20, 21-50, and 51+**. Repeat sightings do not increase the distinct-name count.
 
