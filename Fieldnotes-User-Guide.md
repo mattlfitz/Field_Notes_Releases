@@ -4,7 +4,7 @@
 
 Fieldnotes is a private Android wildlife photography journal. Save photos with animal names, observation dates, places, identification confidence, habitats, outings, and notes. It supports birds, mammals, reptiles, amphibians, and other animals.
 
-Your journal, the bundled animal-name search, and the US state map work offline. There is no account, automatic photo identification, analytics, or automatic cloud backup. The eagle artwork now has the refined compact beak and softer head based on the owner's flight and perched-eagle photos.
+Your journal, the bundled animal-name search, and the US state map work offline. There is no account, automatic photo identification, analytics, or automatic cloud backup. The latest preview reads GPS coordinates from imported photos automatically and presents Insights as visual cards and charts.
 
 This guide describes the current 1.0.0 preview features. New public builds have separate release tags; always read the release notes before installing.
 
@@ -79,7 +79,13 @@ Location name is an optional descriptive place, such as Riverside Nature Preserv
 
 Use current GPS location requests your phone's location when you tap it. Enable Android location services and grant location permission. This is your current position, not an older photo's capture location. No background location is collected.
 
-For an older photograph, enter the actual observation coordinates under More details. Latitude must be between -90 and 90, longitude between -180 and 180. Supply both fields or leave both blank. Use decimal degrees; western US longitudes are negative.
+### Coordinates from the photo itself
+
+Many phones and GPS-equipped cameras store the capture position inside the photo's EXIF data. When you import a photo and both coordinate fields are empty, Fieldnotes reads that position and fills Latitude and Longitude for you, then shows a message so you can review them. If several photos are imported together, the first photo with GPS data is used.
+
+Existing coordinates are never overwritten by a photo import, and nothing is read from the internet; the EXIF data is decoded on your device from the private copy. Photos without GPS data, screenshots, and images exported with location stripped leave the fields blank. Treat the filled values as a starting point: cameras can record the position where the photo was processed rather than where the animal was, so check the detected state and adjust if needed.
+
+For an older photograph without embedded GPS, enter the actual observation coordinates under More details. Latitude must be between -90 and 90, longitude between -180 and 180. Supply both fields or leave both blank. Use decimal degrees; western US longitudes are negative.
 
 The coordinate preview shows the values being saved without loading an online map. Clear coordinates removes both fields.
 
@@ -131,13 +137,17 @@ If an image is unavailable, try the retry control. If the private file is missin
 
 ## 11. Read Insights and outings
 
+Insights opens with three stat cards. Your collection shows Sightings, Animal names, and Places. Photos shows Saved photos, Favorites, and GPS tagged. Life lists shows the confirmed bird and overall life-list totals, Named outings, and Animals observed. Each figure has an icon so you can scan the page quickly.
+
 Sightings counts saved journal entries. Animal names counts distinct entered name/group combinations, including entries that do not qualify for confirmed life lists. Places counts recorded place labels. Saved photos counts photo copies; favorites and GPS-tagged totals reflect saved metadata.
 
 Animals observed adds the entered animal counts. It is different from the distinct-name total.
 
-Expand Bird life list or Overall life list to see confirmed names, first-seen dates, and sighting counts. Tap a name to see its sightings.
+The Animal groups card draws a single bar split by Bird, Mammal, Reptile, Amphibian, and Other animal, with a legend showing each group's sighting count. The Habitats explored card shows a colored bar per habitat, sized by its share of your saved sightings. Both describe your journal, not regional abundance.
 
-Expand Outings to see trips grouped by your outing names. Habitat bars describe saved sightings, not regional species abundance.
+Expand the Bird life list or Overall life list card to see confirmed names and first-seen dates; the badge on each row and on the card header shows sighting counts. Tap a name to see its sightings.
+
+Expand the Outings card to see trips grouped by your outing names, then tap a trip to open its sightings.
 
 ## 12. Explore the US state map
 
@@ -207,7 +217,7 @@ Older backups without animal groups default to Bird; older backups without manua
 
 ## 15. Privacy and offline behavior
 
-Saved data resides in app-private storage. No sign-in, analytics, cloud sync, or background location is used. Android automatic backup is disabled.
+Saved data resides in app-private storage. No sign-in, analytics, cloud sync, or background location is used. Android automatic backup is disabled. Photo GPS data is read locally from your imported copy and is only stored if you save the sighting with those coordinates.
 
 Core journaling, animal-name search, life lists, and state-map detection work offline. External map apps and named-place searches may require internet access and receive the location you choose to open.
 
