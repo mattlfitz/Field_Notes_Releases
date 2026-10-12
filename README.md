@@ -1,23 +1,48 @@
 # Fieldnotes for Android
 
-A personal bird photography journal with photo cataloging, locations, favorites, outings, and offline backups.
+An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and other animals.
 
-## Downloads
+## Downloads and installation
 
-Open [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases) to download the Android APK and illustrated quick-start PDF. No GitHub sign-in is required for public release downloads.
+Download the latest APK from [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases). Public downloads require no GitHub sign-in. This repository distributes APKs and documentation only; application source remains private.
 
-This repository is for distribution only. Application source code is not published here.
+Open the APK on your Android phone using Files or Downloads. Allow installation from that source if prompted, install Fieldnotes, then disable unknown-app installation again. No account is needed.
 
-## Install
+Builds are debug-signed previews, not Play Store releases. Signing keys may differ between builds and prevent an in-place update. **Export a journal backup before changing installations.** Uninstalling or clearing app data deletes the journal and drafts.
 
-1. Download a Fieldnotes APK to your Android phone.
-2. Open it from Files or Downloads and allow installation from that source if prompted.
-3. Install and open Fieldnotes. No account is needed. Disable unknown-app installation afterward.
+## Save a wildlife sighting
 
-## Preview build and your data
+1. Tap **New sighting** and import photos from **Photo library**, or use **Camera**.
+2. Tap **Search animal names** to search 2,570 bundled names by common or scientific name. Filter by animal group if helpful. Selecting a result fills the name, scientific name, and group, but does not confirm identification.
+3. Custom names remain supported. Choose the appropriate **Animal group** and **Identification**. Use `Unknown bird` or `Unknown animal` when needed.
+4. Set the observation date and location. GPS records your phone's current location, not an older photo's location. You can enter coordinates manually or reuse **Saved places**.
+5. For sightings without coordinates, optionally choose **US state (without GPS)**.
+6. Expand **More details** for scientific name, habitat, outing, animal count, observation time, and notes. Tap **Save sighting**.
 
-Current builds are debug-signed previews, not production-signed or Play Store-ready. Different builds may have different signing keys, which can prevent in-place updates. Export a journal backup before changing installations. Uninstalling or clearing app data permanently deletes the local journal and drafts.
+The offline checklist is based on iNaturalist research-grade US/Canada observations, not a complete or authoritative fauna list. It may omit unobserved species or include introduced/escaped animals. No photographs or observation records are bundled, and there is no automatic photo identification.
 
-Photos and metadata stay on your device. Backups are unencrypted ZIP files that may include precise locations. Keep them somewhere you trust. There is no automatic cloud backup; drafts are not included in exports.
+## Explore your journal and map
 
-Automated preview releases identify both the app version and the source build number. Only APKs and documentation are distributed here.
+Search and filter your collection, favorite sightings, and browse locations. Tap a sighting for details; tap its photo for fullscreen pinch zoom. Double-tap switches between fit and actual size.
+
+**Insights** includes separate confirmed **Bird life list** and **Overall life list** views. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
+
+Open **Insights > US state map** for an offline, zoomable map of the 48 contiguous states. **Birds** is selected by default; switch to **All animals** for the overall list. State boundaries and labels show distinct confirmed-name totals. Color bands are **0, 1-5, 6-20, 21-50, and 51+**. Repeat sightings do not increase the distinct-name count.
+
+Pinch or use zoom buttons, drag to pan, and reset zoom to fit the map. Tap a state or small-state label to open its list. Expand a name, then tap a sighting to view or edit it. **State totals and lists** is an alternative to tapping the map.
+
+Coordinates determine a state offline and take priority over a manual state, even outside the map. No state is guessed from a place name. Missing locations and confirmed sightings outside the map are reported as unmapped. Alaska, Hawaii, DC, Canada, and territories are excluded. The same name can appear in multiple states; state totals should not be summed to calculate a national life list.
+
+Map boundaries are public-domain U.S. Census Bureau generalized ACS 2024 data, simplified to 0.005 degrees and displayed using an Albers equal-area projection. Near-border assignments are approximate, not legal boundary determinations. The map uses no online tiles and sends no coordinates to a service.
+
+## Protect your journal
+
+Use **Backup & restore > Export journal** to save a ZIP with saved metadata and original-quality photos. Restore previews the backup and merges new sighting IDs without overwriting existing entries.
+
+Backups are unencrypted, may include precise locations, exclude drafts, and are limited to 256 MB. There is no automatic cloud backup. Keep exports somewhere you trust, and retain your original photo library separately.
+
+Animal groups and manual states persist in drafts and backups. Older entries and backups without an animal group default to Birds; edit previously saved non-bird entries manually. Older entries without coordinates or a state remain unmapped.
+
+## Printable guide
+
+The four-page color quick-start PDF remains available in release downloads. **Its screenshots predate animal-name search and the state map and show earlier bird-specific labels.** Use this updated guide for the new features.
