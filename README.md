@@ -2,6 +2,8 @@
 
 An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and other animals.
 
+The latest preview includes the refined eagle beak and head. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
+
 ## Downloads and installation
 
 Download the latest APK from [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases). Public downloads require no GitHub sign-in. This repository distributes APKs and documentation only; application source remains private.
@@ -45,4 +47,4 @@ Animal groups and manual states persist in drafts and backups. Older entries and
 
 ## Printable guide
 
-The four-page color quick-start PDF remains available in release downloads. **Its screenshots predate animal-name search and the state map and show earlier bird-specific labels.** Use this updated guide for the new features.
+The refreshed color quick-start PDF covers wildlife search and state maps with the current eagle branding. The detailed user guide is also available as a printable PDF. These are current text-based guides, not screenshot walkthroughs.
