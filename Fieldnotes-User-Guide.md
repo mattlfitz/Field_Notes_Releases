@@ -53,7 +53,7 @@ For a few quiet surprises, long-press the eagle icon for a wildlife fact, tap th
 
 At least one photo and a nonempty animal name are required. Location is optional. If a field is invalid, the editor explains what needs correcting. Observation dates cannot be in the future.
 
-For each imported photo, Fieldnotes records supported embedded EXIF details: capture date/time, camera make/model, lens make/model, focal length, shutter speed, aperture, ISO, exposure compensation, flash status, and GPS coordinates. Open a sighting and swipe between photos to see the matching **Photo details** card. The card differentiates a photo with no embedded details from a file Fieldnotes could not read. Metadata is stored per photo, preserved when photos are reordered, and included in journal backups.
+For each imported photo, Fieldnotes records supported embedded EXIF details: capture date/time, camera make/model, lens make/model, focal length, shutter speed, aperture, ISO, exposure compensation, flash status, and GPS coordinates. Open a sighting and swipe between photos or use its thumbnail strip, then expand **Photo details** to see the matching metadata. The card differentiates a photo with no embedded details from a file Fieldnotes could not read. Metadata is stored per photo, preserved when photos are reordered, and included in journal backups.
 
 Use Unknown bird or Unknown animal if you cannot identify the subject. These placeholders are saved as unknown identifications and excluded from life lists.
 
@@ -125,7 +125,7 @@ Example: two sightings of Northern Cardinal in Texas, with animal counts 2 and 3
 
 Fieldnotes copies imported photographs into its private storage at original quality. Your original library files are not modified or deleted.
 
-In the editor, add more photos, remove unwanted ones, use the star to choose the cover, and use arrows to move a photo earlier or later. Save the sighting to apply changes.
+In the editor, add more photos, remove unwanted ones, and use the star to choose the cover. Hold and drag a handle on mobile, drag it directly on Windows, or use the arrow controls to move a photo earlier or later. Save the sighting to apply changes.
 
 Open a sighting to swipe through its photos. Tap a photo to open fullscreen. Pinch to zoom and drag around the enlarged image.
 
@@ -145,7 +145,7 @@ If an image is unavailable, try the retry control. If the private file is missin
 
 ## 11. Read Insights and outings
 
-Insights opens with three stat cards. Your collection shows Sightings, Animal names, and Places. Photos shows Saved photos, Favorites, and GPS tagged. Life lists shows the confirmed bird and overall life-list totals, Named outings, and Animals observed. Each figure has an icon so you can scan the page quickly.
+Insights keeps an **Overview**, **Life lists**, and **Outings** switcher visible while you browse. Overview shows three stat cards: Your collection shows Sightings, Animal names, and Places; Photos shows Saved photos, Favorites, and GPS tagged; Life lists shows confirmed bird and overall totals, Named outings, and Animals observed. Each figure has an icon so you can scan the page quickly. Life lists and Outings move their detailed expandable lists into focused sections.
 
 Sightings counts saved journal entries. Animal names counts distinct entered name/group combinations, including entries that do not qualify for confirmed life lists. Places counts recorded place labels. Saved photos counts photo copies; favorites and GPS-tagged totals reflect saved metadata.
 
