@@ -35,7 +35,7 @@ Search and filter your collection, favorite sightings, and browse locations. Tap
 
 The per-photo **Photo details** card shows embedded capture time, camera and lens, focal length, shutter speed, aperture, ISO, exposure compensation, and flash status. It explicitly reports when details are not embedded or cannot be read. These details survive photo reordering, journal edits, and backup/restore.
 
-**Insights** presents your journal as visual cards: collection, photo, and life-list totals with icons, an animal-group bar, and colored habitat bars. Expand the confirmed **Bird life list**, **Overall life list**, and **Outings** cards to drill into sightings. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
+**Insights** uses persistent **Overview**, **Life lists**, and **Outings** sections. Overview presents collection, photo, and life-list totals with icons, an animal-group bar, and colored habitat bars. Open the other sections and expand the confirmed **Bird life list**, **Overall life list**, or **Outings** card to drill into sightings. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
 
 Open **Insights > US state map** for an offline, zoomable map of the 48 contiguous states. **Birds** is selected by default; switch to **All animals** for the overall list. State boundaries and labels show distinct confirmed-name totals. Color bands are **0, 1-5, 6-20, 21-50, and 51+**. Repeat sightings do not increase the distinct-name count.
 
