@@ -1,25 +1,29 @@
-# Fieldnotes for Android
+# Fieldnotes for Android & Windows
 
 An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and other animals.
 
-The latest preview reads photo GPS data automatically and presents Insights as visual cards and charts. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
+The latest preview reads photo EXIF details automatically, presents Insights as visual cards and charts, and provides both an Android APK and a native 64-bit Windows portable edition. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
 
 Tap the eagle icon to open its larger artwork; pinch to zoom and use Reset eagle zoom to fit again. Long-press the icon for a wildlife fact, tap the Insights heading for a discovery message, or double-tap the enlarged eagle for a gentle soaring animation. These extras work offline, respect reduced-motion settings, and never change journal data.
 
 ## Downloads and installation
 
-Download the latest APK from [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases). Public downloads require no GitHub sign-in. This repository distributes APKs and documentation only; application source remains private.
+Download the latest Android APK or native 64-bit Windows portable ZIP from [Releases](https://github.com/mattlfitz/Field_Notes_Releases/releases). Public downloads require no GitHub sign-in. This repository distributes application binaries and documentation only; application source remains private.
 
+### Android
 Open the APK on your Android phone using Files or Downloads. Allow installation from that source if prompted, install Fieldnotes, then disable unknown-app installation again. No account is needed.
 
 Builds are debug-signed previews, not Play Store releases. Signing keys may differ between builds and prevent an in-place update. **Export a journal backup before changing installations.** Uninstalling or clearing app data deletes the journal and drafts.
+
+### Windows (desktop)
+Download `Fieldnotes-Windows-*.zip`, extract the archive to any folder, and run `fieldnotes.exe`. Visual C++ runtime DLLs and required Flutter engine files are bundled inside the folder. No installer is required.
 
 ## Save a wildlife sighting
 
 1. Tap **New sighting** and import photos from **Photo library**, or use **Camera**.
 2. Tap **Search animal names** to search 2,570 bundled names by common or scientific name. Filter by animal group if helpful. Selecting a result fills the name, scientific name, and group, but does not confirm identification.
 3. Custom names remain supported. Choose the appropriate **Animal group** and **Identification**. Use `Unknown bird` or `Unknown animal` when needed.
-4. Set the observation date and location. When an imported photo contains GPS data from the camera, its coordinates fill the location fields automatically if they are empty; check them before saving. **Use current GPS location** records your phone's current location, not an older photo's location. You can also enter coordinates manually or reuse **Saved places**.
+4. Set the observation date and location. When an imported photo contains EXIF data, its capture date is suggested unless you already chose a date, and its GPS coordinates fill the location fields only when they are empty. Check both before saving. **Use current GPS location** records your device's current location, not an older photo's location. You can also enter coordinates manually or reuse **Saved places**.
 5. For sightings without coordinates, optionally choose **US state (without GPS)**.
 6. Expand **More details** for scientific name, habitat, outing, animal count, observation time, and notes. Tap **Save sighting**.
 
@@ -27,7 +31,9 @@ The offline checklist is based on iNaturalist research-grade US/Canada observati
 
 ## Explore your journal and map
 
-Search and filter your collection, favorite sightings, and browse locations. Tap a sighting for details; tap its photo for fullscreen pinch zoom. Double-tap switches between fit and actual size.
+Search and filter your collection, favorite sightings, and browse locations. Tap a sighting for details; tap its photo for fullscreen pinch zoom. Double-tap switches between fit and actual size. Android opens coordinates with a native map intent; Windows uses an HTTPS Google Maps link.
+
+The per-photo **Photo details** card shows embedded capture time, camera and lens, focal length, shutter speed, aperture, ISO, exposure compensation, and flash status. It explicitly reports when details are not embedded or cannot be read. These details survive photo reordering, journal edits, and backup/restore.
 
 **Insights** presents your journal as visual cards: collection, photo, and life-list totals with icons, an animal-group bar, and colored habitat bars. Expand the confirmed **Bird life list**, **Overall life list**, and **Outings** cards to drill into sightings. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
 
