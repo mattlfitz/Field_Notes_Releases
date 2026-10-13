@@ -2,14 +2,15 @@
 
 ## 1. Welcome
 
-Fieldnotes is a private Android wildlife photography journal. Save photos with animal names, observation dates, places, identification confidence, habitats, outings, and notes. It supports birds, mammals, reptiles, amphibians, and other animals.
+Fieldnotes is a private Android and Windows wildlife photography journal. Save photos with animal names, observation dates, places, identification confidence, habitats, outings, and notes. It supports birds, mammals, reptiles, amphibians, and other animals.
 
-Your journal, the bundled animal-name search, and the US state map work offline. There is no account, automatic photo identification, analytics, or automatic cloud backup. The latest preview reads GPS coordinates from imported photos automatically and presents Insights as visual cards and charts.
+Your journal, the bundled animal-name search, and the US state map work offline. There is no account, automatic photo identification, analytics, or automatic cloud backup. The latest preview reads per-photo EXIF capture details and GPS coordinates automatically and presents Insights as visual cards and charts.
 
 This guide describes the current 1.0.0 preview features. New public builds have separate release tags; always read the release notes before installing.
 
 ## 2. Install or update safely
 
+### Android
 1. Visit https://github.com/mattlfitz/Field_Notes_Releases/releases on your phone.
 2. Open the newest preview release and download its Fieldnotes APK.
 3. Before updating an existing installation, export a journal backup and keep it outside app storage.
@@ -20,11 +21,16 @@ These APKs are debug-signed previews, not production-signed Play Store releases.
 
 Uninstalling Fieldnotes or clearing its app data permanently removes the local journal and drafts. After reinstalling, use Backup & restore to merge a saved backup. Drafts cannot be restored from a journal export.
 
+### Windows (desktop)
+1. Download `Fieldnotes-Windows-*.zip` from the latest release on GitHub Releases.
+2. Extract the ZIP archive into a folder of your choice (e.g. `C:\Fieldnotes`).
+3. Run `fieldnotes.exe`. All required Visual C++ runtime libraries and Flutter assets are bundled inside the folder. No installer is required.
+
 ## 3. Understand the main screens
 
 Collection is your photo journal. Search, filter, sort, and open sightings here.
 
-Locations groups recorded places and opens their sightings. External map actions hand a selected place or coordinates to another app or browser.
+Locations groups recorded places and opens their sightings. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
 
 Insights shows totals, habitats, confirmed life lists, named outings, and the US state map.
 
@@ -40,12 +46,14 @@ For a few quiet surprises, long-press the eagle icon for a wildlife fact, tap th
 2. Choose Photo library for one or more photos, or Camera for a new photo.
 3. Enter an Animal / species name, or tap Search animal names.
 4. Check the Animal group. Bird is the default; choose Mammal, Reptile, Amphibian, or Other animal when appropriate.
-5. Set Date observed and Identification.
+5. Set Date observed and Identification. If the first imported photo has an EXIF capture date, Fieldnotes suggests that date until you choose one yourself.
 6. Add an optional location name, coordinates, or manual US state.
 7. Open More details for optional fields.
 8. Tap Save sighting.
 
 At least one photo and a nonempty animal name are required. Location is optional. If a field is invalid, the editor explains what needs correcting. Observation dates cannot be in the future.
+
+For each imported photo, Fieldnotes records supported embedded EXIF details: capture date/time, camera make/model, lens make/model, focal length, shutter speed, aperture, ISO, exposure compensation, flash status, and GPS coordinates. Open a sighting and swipe between photos to see the matching **Photo details** card. The card differentiates a photo with no embedded details from a file Fieldnotes could not read. Metadata is stored per photo, preserved when photos are reordered, and included in journal backups.
 
 Use Unknown bird or Unknown animal if you cannot identify the subject. These placeholders are saved as unknown identifications and excluded from life lists.
 
