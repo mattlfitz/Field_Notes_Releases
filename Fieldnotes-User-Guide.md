@@ -30,9 +30,9 @@ Uninstalling Fieldnotes or clearing its app data permanently removes the local j
 
 Collection is your photo journal. Search, filter, sort, and open sightings here.
 
-Locations groups recorded places and opens their sightings. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
+Locations leads with the offline US state life-list map, then groups recorded places and opens their sightings. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
 
-Insights shows totals, habitats, confirmed life lists, named outings, and the US state map.
+Insights shows totals, habitats, confirmed life lists, and named outings.
 
 New sighting opens the editor. Backup & restore is available from the main app bar.
 
@@ -159,7 +159,7 @@ Expand the Outings card to see trips grouped by your outing names, then tap a tr
 
 ## 12. Explore the US state map
 
-Open Insights > US state map. Birds is selected by default each time the map is opened. Choose All animals for the overall confirmed life list.
+Open Locations > Explore state map from the prominent US state life-lists card. The card summarizes mapped sightings and confirmed names before opening the map. Birds is selected by default each time the map is opened. Choose All animals for the overall confirmed life list.
 
 Each state label shows its abbreviation and distinct confirmed-name count. Boundaries remain visible. Color bands are fixed across both modes:
 
