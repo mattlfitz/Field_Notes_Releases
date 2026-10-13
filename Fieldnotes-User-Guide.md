@@ -137,7 +137,9 @@ Fullscreen includes previous/next controls, a photo counter, and reset zoom. Jou
 
 Open a sighting, swipe to the photo you want, and tap **Share sighting** in the top bar. Fieldnotes shares the currently displayed photo and opens the operating system's share sheet, where installed apps such as Facebook, Threads, Instagram, Messages, or Mail may be available.
 
-Choose **Branded card** for a portrait Fieldnotes card with the photo and selected details, or **Photo + caption** for a clean copy of the photo plus selected text. You can include the animal name, scientific name, observation date, location name, habitat, identification status, animal count, outing, field notes, and available camera/exposure details.
+Choose **Branded card** for a portrait Fieldnotes card with the photo and selected details, or **Photo + caption** for a clean copy of the photo plus selected text. You can include the animal name, scientific name, observation date, location name, habitat, identification status, animal count, outing, field notes, and available camera/exposure details. The image and caption previews update as you change these choices.
+
+Use **Copy caption** when a social app does not accept text from the system share sheet. Use **Save image** to put the currently previewed, privacy-safe PNG in the device photo gallery for later posting. **Open share sheet** sends the same image and caption to the operating system's installed sharing targets.
 
 Precise latitude and longitude are never offered or added to the card or caption. The location name and field notes are off by default and must be selected each time. Before sharing either format, Fieldnotes decodes and re-encodes the image as a new PNG, removing the original EXIF metadata, including any hidden GPS coordinates. The shared photo is therefore visually the same image rather than the original file bytes. Sharing is an explicit action and may send the selected content to the app or service you choose.
 
@@ -233,7 +235,7 @@ Older backups without animal groups default to Bird; older backups without manua
 
 ## 15. Privacy and offline behavior
 
-Saved data resides in app-private storage. No sign-in, analytics, cloud sync, or background location is used. Android automatic backup is disabled. Photo GPS data is read locally from your imported copy and is only stored if you save the sighting with those coordinates. Sharing is user-initiated; precise coordinates are excluded and shared images are re-encoded without EXIF or hidden GPS before the system share sheet opens.
+Saved data resides in app-private storage. No sign-in, analytics, cloud sync, or background location is used. Android automatic backup is disabled. Photo GPS data is read locally from your imported copy and is only stored if you save the sighting with those coordinates. Sharing and saving an image are user-initiated; precise coordinates are excluded and exported images are re-encoded without EXIF or hidden GPS before they leave app-private storage.
 
 Core journaling, animal-name search, life lists, and state-map detection work offline. External map apps and named-place searches may require internet access and receive the location you choose to open.
 
