@@ -37,7 +37,7 @@ The per-photo **Photo details** card shows embedded capture time, camera and len
 
 **Insights** uses persistent **Overview**, **Life lists**, and **Outings** sections. Overview presents collection, photo, and life-list totals with icons, an animal-group bar, and colored habitat bars. Open the other sections and expand the confirmed **Bird life list**, **Overall life list**, or **Outings** card to drill into sightings. Counts use entered names, not verified taxonomy; unknown names and tentative identifications do not enter life lists.
 
-Open **Insights > US state map** for an offline, zoomable map of the 48 contiguous states. **Birds** is selected by default; switch to **All animals** for the overall list. State boundaries and labels show distinct confirmed-name totals. Color bands are **0, 1-5, 6-20, 21-50, and 51+**. Repeat sightings do not increase the distinct-name count.
+Open **Locations > Explore state map** from the prominent state-life-list card to launch the offline, zoomable **US state map** for the 48 contiguous states. The card summarizes mapped sightings and confirmed names. **Birds** is selected by default; switch to **All animals** for the overall list. State boundaries and labels show distinct confirmed-name totals. Color bands are **0, 1-5, 6-20, 21-50, and 51+**. Repeat sightings do not increase the distinct-name count.
 
 Pinch or use zoom buttons, drag to pan, and reset zoom to fit the map. Tap a state or small-state label to open its list. Expand a name, then tap a sighting to view or edit it. **State totals and lists** is an alternative to tapping the map.
 
