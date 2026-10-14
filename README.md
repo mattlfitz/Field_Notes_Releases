@@ -18,6 +18,8 @@ Builds are debug-signed previews, not Play Store releases. Signing keys may diff
 ### Windows (desktop)
 Download `Fieldnotes-Windows-*.zip`, extract the archive to any folder, and run `fieldnotes.exe`. Visual C++ runtime DLLs and required Flutter engine files are bundled inside the folder. No installer is required.
 
+On Windows, Fieldnotes opens on an interactive welcome screen: an illustrated forest with the Fieldnotes eagle in flight. Switch the scene between dawn, midday, and dusk, move the mouse for a gentle parallax, click the eagle to make it soar, or ask for a wildlife fact. Choose **Continue to journal** (or press Escape) when you are ready. Tick **Skip this screen next time** to go straight to the journal; you can always reopen it from the forest icon in the journal toolbar. The scene is drawn in the app, so it works entirely offline, and it respects the Windows "show animations" accessibility setting.
+
 ## Save a wildlife sighting
 
 1. Tap **New sighting** and import photos from **Photo library**, or use **Camera**.
