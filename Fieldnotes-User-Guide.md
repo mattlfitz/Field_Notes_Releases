@@ -43,9 +43,11 @@ If Windows is set to minimize animations, the eagle and forest stay still. Time-
 
 Collection is your photo journal. Search, filter, sort, and open sightings here.
 
-Locations leads with the offline US state life-list map, then groups recorded places and opens their sightings. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
+Locations leads with a live preview of the offline US state life-list map, then groups recorded places and opens their sightings. On wide windows, the map preview and saved places sit side by side. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
 
-Insights shows totals, habitats, confirmed life lists, and named outings.
+On wide Windows and iPad layouts, the navigation rail adds a State map destination that fills the window with the map. On Windows, press Ctrl+M to open it.
+
+Insights shows totals, a States explored map preview, habitats, confirmed life lists, and named outings.
 
 New sighting opens the editor. Backup & restore is available from the main app bar.
 
@@ -182,7 +184,7 @@ Expand the Outings card to see trips grouped by your outing names, then tap a tr
 
 ## 12. Explore the US state map
 
-Open Locations > Explore state map from the prominent US state life-lists card. The card summarizes mapped sightings and confirmed names before opening the map. Birds is selected by default each time the map is opened. Choose All animals for the overall confirmed life list.
+Open Locations > Explore state map from the prominent US state life-lists card. The card shows a live preview of your colored states and summarizes states explored, mapped sightings, and confirmed names before opening the map. On wide Windows and iPad layouts, you can also choose State map in the navigation rail, press Ctrl+M on Windows, or select Open state map on the Insights States explored card. Birds is selected by default each time the map is opened. Choose All animals for the overall confirmed life list.
 
 Each state label shows its abbreviation and distinct confirmed-name count. Boundaries remain visible. Color bands are fixed across both modes:
 
@@ -192,9 +194,13 @@ Each state label shows its abbreviation and distinct confirmed-name count. Bound
 - 21-50: darker green.
 - 51 or more: deepest green.
 
-Pinch to zoom, drag to pan, or use Zoom in map and Zoom out map. Reset map zoom returns to the initial fit. Tap a state or one of the small-state labels to open its list.
+Pinch to zoom, scroll the mouse wheel, drag to pan, or use Zoom in map and Zoom out map. Reset map zoom returns to the initial fit. With a mouse, hover a state to highlight it and see its name and total. Tap a state or one of the small-state labels to open its list.
 
-The State totals and lists section provides a text-based alternative to map tapping, including states with zero names. It is useful for small states, larger text settings, and assistive technology.
+On wide layouts, the map fills most of the window and a side panel sits beside it. Summary cards above the map show states explored, your top state (or a tie between states), and mapped names; on short windows the cards are hidden to give the map more room. With no state selected, the panel offers a Find a state search, ranks explored states with progress bars, and lists the remaining states under Still to explore. Click a state on the map or in the panel to show its list. Select Show all states to return to the overview.
+
+With a keyboard, press Tab to move focus to the map, use the arrow keys to move between states in alphabetical order, and press Enter or Space to open the highlighted state.
+
+The State totals and lists section on phones provides a text-based alternative to map tapping, including states with zero names. It is useful for small states, larger text settings, and assistive technology.
 
 ### State drilldown
 
