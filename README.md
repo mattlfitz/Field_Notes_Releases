@@ -2,7 +2,7 @@
 
 An offline wildlife photo journal for birds, mammals, reptiles, amphibians, and other animals.
 
-The latest preview reads photo EXIF details automatically, presents Insights as visual cards and charts, and provides both an Android APK and a native 64-bit Windows portable edition. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
+The latest preview adds privacy-safe sighting sharing with live image and caption previews, makes the offline US state life-list map central to Locations, reads per-photo EXIF details automatically, and presents Insights as visual cards and charts. Public downloads include an Android APK and a native 64-bit Windows portable edition. Read the [detailed user guide](Fieldnotes-User-Guide.md) for complete instructions, examples, privacy information, and troubleshooting. PDF editions of the quick start and detailed guide are included in release downloads.
 
 Tap the eagle icon to open its larger artwork; pinch to zoom and use Reset eagle zoom to fit again. Long-press the icon for a wildlife fact, tap the Insights heading for a discovery message, or double-tap the enlarged eagle for a gentle soaring animation. These extras work offline, respect reduced-motion settings, and never change journal data.
 
