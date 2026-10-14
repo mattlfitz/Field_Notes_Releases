@@ -26,6 +26,18 @@ Uninstalling Fieldnotes or clearing its app data permanently removes the local j
 2. Extract the ZIP archive into a folder of your choice (e.g. `C:\Fieldnotes`).
 3. Run `fieldnotes.exe`. All required Visual C++ runtime libraries and Flutter assets are bundled inside the folder. No installer is required.
 
+#### The Windows welcome screen
+Fieldnotes opens on an illustrated welcome screen with the Fieldnotes eagle in flight over a forest. The scene is drawn by the app, so it needs no internet connection and no downloaded imagery.
+
+- Choose **Dawn**, **Midday**, or **Dusk** to change the light.
+- Move the mouse across the scene for a gentle parallax, or click the eagle to send it soaring.
+- Select **Wildlife fact** for a short note about bald eagles and field journaling.
+- Select **Continue to journal**, or press `Esc`, to open your collection. The journal loads in the background while the welcome screen is open.
+- Tick **Skip this screen next time** to go straight to the journal on future launches. This preference is stored separately from your journal, so restoring a backup never changes it.
+- Reopen the welcome screen at any time from the forest icon in the journal toolbar.
+
+If Windows is set to minimize animations, the scene stays still and the eagle responds without motion.
+
 ## 3. Understand the main screens
 
 Collection is your photo journal. Search, filter, sort, and open sightings here.
