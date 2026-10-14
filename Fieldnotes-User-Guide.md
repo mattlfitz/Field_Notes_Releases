@@ -43,7 +43,7 @@ If Windows is set to minimize animations, the eagle and forest stay still. Time-
 
 Collection is your photo journal. Search, filter, sort, and open sightings here.
 
-Locations leads with a live preview of the offline US state life-list map, then groups recorded places and opens their sightings. On wide windows, the map preview and saved places sit side by side. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
+Locations leads with a **Sighting map** that pins every GPS-tagged sighting in the lower 48, then a live preview of the offline US state life-list map, then groups recorded places and opens their sightings. On wide windows, the map preview and saved places sit side by side. External map actions hand a selected place or coordinates to another app or browser. Android uses a native `geo:` map intent for coordinates with an HTTPS fallback; Windows opens an HTTPS Google Maps link directly.
 
 On wide Windows and iPad layouts, the navigation rail adds a State map destination that fills the window with the map. On Windows, press Ctrl+M to open it.
 
@@ -71,6 +71,10 @@ At least one photo and a nonempty animal name are required. Location is optional
 For each imported photo, Fieldnotes records supported embedded EXIF details: capture date/time, camera make/model, lens make/model, focal length, shutter speed, aperture, ISO, exposure compensation, flash status, and GPS coordinates. Open a sighting and swipe between photos or use its thumbnail strip, then expand **Photo details** to see the matching metadata. The card differentiates a photo with no embedded details from a file Fieldnotes could not read. Metadata is stored per photo, preserved when photos are reordered, and included in journal backups.
 
 Use Unknown bird or Unknown animal if you cannot identify the subject. These placeholders are saved as unknown identifications and excluded from life lists.
+
+### Import many photos at once
+
+After a big day in the field, tap **Import many photos** (the photo-plus icon in the top app bar) and choose your photos. Fieldnotes reads each photo's capture time and GPS and groups photos taken within 30 minutes and about 1 km of each other into one sighting. Photos without a capture date each become their own sighting. Turn off **Group photos taken together** to import every photo separately, and uncheck any group you do not want. Tap **Import** to save each group as an **Unknown bird** sighting with its date, time, and location filled in, then open each one to add the animal name and identification.
 
 ## 5. Search the offline animal checklist
 
@@ -160,11 +164,11 @@ Precise latitude and longitude are never offered or added to the card or caption
 
 ## 10. Find, edit, favorite, or delete sightings
 
-Collection search matches names, scientific names, places, notes, habitats, and outings. Combine search with favorite and habitat filters. Sort by observation date or animal name.
+Collection search matches names, scientific names, places, notes, habitats, outings, animal types, and US state names (or an exact state code such as `OH`). Combine search with the filter chips: **Favorites**; an animal-type chip such as **Birds** or **Mammals** when your journal has more than one type; and the **Year**, **State**, and **Habitat** menus. **All sightings** clears every filter. Sort by observation date or animal name.
 
 Tap a card to view details. Use the heart to favorite or unfavorite it and the pencil to edit it. Save after editing.
 
-The sighting menu offers deletion with confirmation. Cancel keeps the entry. Deleting removes the saved sighting and its app-managed photo references; it does not delete original library photographs.
+The sighting menu offers deletion with confirmation. Cancel keeps the entry. Deleting removes the saved sighting and its app-managed photo references; it does not delete original library photographs. Right after deleting, tap **Undo** in the message at the bottom of the screen (shown for about 8 seconds) to restore the sighting with its photos.
 
 If an image is unavailable, try the retry control. If the private file is missing or damaged, add a replacement from the original library. Merge restore skips already-existing sighting IDs, so it does not overwrite an existing damaged entry.
 
@@ -180,9 +184,24 @@ The Animal groups card draws a single bar split by Bird, Mammal, Reptile, Amphib
 
 Expand the Bird life list or Overall life list card to see confirmed names and first-seen dates; the badge on each row and on the card header shows sighting counts. Tap a name to see its sightings.
 
+### Year lists and goals
+
+Life lists opens with a **Year list** card. Pick a year from the menu and choose **Birds** or **All animals** to count the distinct confirmed names observed that year. Select **Set goal** to enter an annual target; a progress bar shows how many names remain, and the goal is remembered for that year (enter 0 to clear it). Expand the list to see each name with its **First of year** date, then tap a name to open those sightings. Overview also shows the current year's bird year-list total.
+
+### New lifer celebrations
+
+When a new sighting adds a confirmed name you have never recorded, Fieldnotes celebrates with a **New lifer!** message showing its number on your bird or overall life list. Select **View** to open the sighting. Confirming an existing entry later updates the life lists without a celebration.
+
 Expand the Outings card to see trips grouped by your outing names, then tap a trip to open its sightings.
 
 ## 12. Explore the US state map
+
+### Sighting pin map
+
+The **Sighting map** card at the top of Locations places a pin for each sighting with GPS coordinates. It is drawn on your device from the bundled state outlines, so no map service receives your locations. Nearby sightings merge into a numbered group. Tap a single pin to open its sighting, or tap a group to zoom in until its pins separate; sightings at the same spot open as a list. Pinch, use the mouse wheel, or use the **+** and **-** buttons to zoom, and choose **Show all pins** to reset. GPS sightings outside the 48 contiguous states are counted below the map and still appear under Saved places.
+
+### State life-list map
+
 
 Open Locations > Explore state map from the prominent US state life-lists card. The card shows a live preview of your colored states and summarizes states explored, mapped sightings, and confirmed names before opening the map. On wide Windows and iPad layouts, you can also choose State map in the navigation rail, press Ctrl+M on Windows, or select Open state map on the Insights States explored card. Birds is selected by default each time the map is opened. Choose All animals for the overall confirmed life list.
 
@@ -236,6 +255,14 @@ Drafts are not backups, do not transfer to another installation, and are not inc
 4. Confirm that the file exists and keep another copy if the journal is important.
 
 Exports include saved metadata and original photo copies, including animal groups and manual states. Drafts are excluded. Backups are unencrypted and may contain precise coordinates.
+
+### Share with eBird
+
+Tap **Export eBird CSV** on Backup & restore to save your confirmed bird sightings as an eBird Record Format file (no header row). Tentative and unknown sightings and other animals are skipped, and Fieldnotes tells you how many were exported. Each sighting is exported as an incidental observation with its count, notes, location, coordinates, date, time, and state. Fieldnotes never uploads anything: you choose where the file is saved, and you import it yourself at ebird.org/import using the **eBird Record Format (Extended)** option, where eBird asks you to confirm each location before submitting.
+
+### Backup reminders
+
+Backups never run automatically, so Collection shows a reminder card when work is at risk: after your first three sightings if you have never exported, or once a backup is two weeks old (or ten sightings behind) and newer sightings exist. Choose **Back up now** to open Backup & restore, or **Remind me later** to hide the card for seven days. The card disappears after a successful export.
 
 The uncompressed backup content is limited to 256 MB. Keep original photographs backed up separately; export is not an unlimited photo-archive service.
 
