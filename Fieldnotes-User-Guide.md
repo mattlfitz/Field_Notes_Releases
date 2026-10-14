@@ -27,16 +27,17 @@ Uninstalling Fieldnotes or clearing its app data permanently removes the local j
 3. Run `fieldnotes.exe`. All required Visual C++ runtime libraries and Flutter assets are bundled inside the folder. No installer is required.
 
 #### The Windows welcome screen
-Fieldnotes opens on an illustrated welcome screen with the Fieldnotes eagle in flight over a forest. The scene is drawn by the app, so it needs no internet connection and no downloaded imagery.
+Fieldnotes opens on an illustrated welcome screen with the Fieldnotes eagle gliding across a forest, replacing the previous bobbing and click-to-soar effect. The scene is drawn by the app, so it needs no internet connection and no downloaded imagery.
 
-- Choose **Dawn**, **Midday**, or **Dusk** to change the light.
-- Move the mouse across the scene for a gentle parallax, or click the eagle to send it soaring.
+- Lighting starts from your computer's local system time and updates automatically while the screen is open. The sky and forest transition through dawn, daylight, dusk, and night; nighttime includes a moon and stars. This is an illustrative clock-based scene, not a calculation of local sunrise or sunset.
+- Select the time button to open a compact **Time of day** dialog. Enable **Override time of day** there to reveal a full-day slider. Drag it to preview another time; the slider stays hidden while system time is in use. Disable override to restore the current system time immediately. Select **Done** or click outside the dialog to close it and keep the live preview. The preview does not affect your journal or system clock and resets when you reopen the welcome screen.
+- Move the mouse across the scene for a gentle parallax. The eagle glides from left to right and returns after passing beyond the screen edge.
 - Select **Wildlife fact** for a short note about bald eagles and field journaling.
 - Select **Continue to journal**, or press `Esc`, to open your collection. The journal loads in the background while the welcome screen is open.
 - Tick **Skip this screen next time** to go straight to the journal on future launches. This preference is stored separately from your journal, so restoring a backup never changes it.
 - Reopen the welcome screen at any time from the forest icon in the journal toolbar.
 
-If Windows is set to minimize animations, the scene stays still and the eagle responds without motion.
+If Windows is set to minimize animations, the eagle and forest stay still. Time-of-day controls and the continue button still work.
 
 ## 3. Understand the main screens
 
