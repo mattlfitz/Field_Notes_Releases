@@ -17,9 +17,17 @@ This guide describes the current 1.0.0 preview features. New public builds have 
 4. Open the APK from Files or Downloads. Android may ask you to permit that app to install unknown apps.
 5. Install Fieldnotes and open it. Disable unknown-app installation afterward.
 
-These APKs are debug-signed previews, not production-signed Play Store releases. GitHub builds can use different signing keys. If Android rejects an update because its signature differs, do not immediately uninstall: first export your journal and verify that the ZIP is saved somewhere accessible.
+Builds are now signed with one permanent Fieldnotes key, so later versions install over the top and keep your journal. Copies installed before in-app updates were signed with temporary keys: Android rejects an update over them. For that one-time switch, export your journal, check the ZIP is saved outside the app, uninstall Fieldnotes, install the new APK, and restore the backup.
 
 Uninstalling Fieldnotes or clearing its app data permanently removes the local journal and drafts. After reinstalling, use Backup & restore to merge a saved backup. Drafts cannot be restored from a journal export.
+
+### In-app updates
+Fieldnotes checks GitHub for a newer build each time it opens. When one is available, a banner shows the build number and download size; select **Update** or **Later**. You can also check at any time from **About Fieldnotes > Check for updates**, which also shows your current build.
+
+- **Android** downloads only the APK built for your phone's processor and verifies its checksum. The first time, Android asks you to allow Fieldnotes to install apps: turn on **Allow from this source**, then go back. Android then asks **Update this app?** and may run a Google Play Protect scan, because Fieldnotes is not from the Play Store. Your journal stays in place.
+- **Windows** downloads only the files that changed since your build, then asks to **Restart to update**. Fieldnotes closes, replaces those files, and reopens. If anything fails, the previous files are put back and Fieldnotes says so on the next launch. Keep Fieldnotes in a folder you can write to, such as `C:\Fieldnotes`; it cannot update itself inside `C:\Program Files`.
+
+Updates need an internet connection only while checking and downloading. Fieldnotes never sends your journal anywhere.
 
 ### Windows (desktop)
 1. Download `Fieldnotes-Windows-*.zip` from the latest release on GitHub Releases.
