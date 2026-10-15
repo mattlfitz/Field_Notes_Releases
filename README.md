@@ -13,7 +13,7 @@ Download the latest Android APK or native 64-bit Windows portable ZIP from [Rele
 ### Android
 Open the APK on your Android phone using Files or Downloads. Allow installation from that source if prompted, install Fieldnotes, then disable unknown-app installation again. No account is needed.
 
-Builds are debug-signed previews, not Play Store releases. Signing keys may differ between builds and prevent an in-place update. **Export a journal backup before changing installations.** Uninstalling or clearing app data deletes the journal and drafts.
+Builds are signed previews, not Play Store releases, and update themselves from inside the app. Copies installed before in-app updates need one uninstall and reinstall. **Export a journal backup before changing installations.** Uninstalling or clearing app data deletes the journal and drafts.
 
 ### Windows (desktop)
 Download `Fieldnotes-Windows-*.zip`, extract the archive to any folder, and run `fieldnotes.exe`. Visual C++ runtime DLLs and required Flutter engine files are bundled inside the folder. No installer is required.
