@@ -75,7 +75,7 @@ For a few quiet surprises, long-press the eagle icon for a wildlife fact, tap th
 7. Open More details for optional fields.
 8. Tap Save sighting.
 
-At least one photo and a nonempty animal name are required. Location is optional. If a field is invalid, the editor explains what needs correcting. Observation dates cannot be in the future.
+At least one photo and a nonempty animal name are required for a new sighting. To log animals without photos, use **Checklist** instead: tap names to count them and save each as its own photo-less sighting under one outing. Location is optional. If a field is invalid, the editor explains what needs correcting. Observation dates cannot be in the future.
 
 For each imported photo, Fieldnotes records supported embedded EXIF details: capture date/time, camera make/model, lens make/model, focal length, shutter speed, aperture, ISO, exposure compensation, flash status, and GPS coordinates. Open a sighting and swipe between photos or use its thumbnail strip, then expand **Photo details** to see the matching metadata. The card differentiates a photo with no embedded details from a file Fieldnotes could not read. Metadata is stored per photo, preserved when photos are reordered, and included in journal backups.
 
@@ -240,7 +240,7 @@ The unmapped message counts eligible confirmed sightings that cannot be assigned
 
 ### Scope and accuracy
 
-The map covers the 48 contiguous states only. Alaska, Hawaii, DC, Canada, and territories are excluded, but sightings there can still be saved and included in overall journal and life-list totals.
+The map opens on the 48 contiguous states. Use the **Region** picker above the map to switch to Alaska, Hawaii, or Canada's provinces and territories. DC and US territories are not mapped, but sightings there can still be saved and included in overall journal and life-list totals.
 
 Boundaries are public-domain U.S. Census Bureau generalized ACS 2024 data, simplified to 0.005 degrees. Display uses an Albers equal-area projection. Detection near borders is approximate, not a legal boundary determination. No online map tiles are requested and coordinates are not sent to a service for state detection.
 
